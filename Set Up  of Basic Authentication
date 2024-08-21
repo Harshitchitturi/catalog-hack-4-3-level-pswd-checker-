@@ -1,0 +1,16 @@
+import getpass
+
+def first_level_authentication():
+    # Sample user credentials (In real applications, store hashed passwords securely)
+    valid_username = "user"
+    valid_password = "password123"
+
+    print("First Level Authentication")
+    username = input("Enter username: ")
+    password = getpass.getpass("Enter password: ")
+
+    if username == valid_username and password == valid_password:
+        return True
+    else:
+        print("Invalid username or password.")
+        return False
