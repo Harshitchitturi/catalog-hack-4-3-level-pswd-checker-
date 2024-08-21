@@ -1,0 +1,12 @@
+def third_level_authentication():
+    # Sample security question
+    correct_answer = "myFirstCar"
+
+    print("Third Level Authentication")
+    answer = input("What was the make of your first car? ")
+
+    if answer.lower() == correct_answer.lower():
+        return True
+    else:
+        print("Incorrect answer to security question.")
+        return False
