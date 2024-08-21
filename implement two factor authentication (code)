@@ -1,0 +1,17 @@
+import random
+
+def generate_code():
+    return str(random.randint(1000, 9999))
+
+def second_level_authentication():
+    correct_code = generate_code()
+    print(f"Your authentication code is: {correct_code}")
+
+    # In a real system, send this code via email/SMS
+
+    entered_code = input("Enter the authentication code: ")
+    if entered_code == correct_code:
+        return True
+    else:
+        print("Invalid authentication code.")
+        return False
