@@ -1,0 +1,16 @@
+def main():
+    print("Welcome to the Three-Level Authentication System")
+
+    if first_level_authentication():
+        if second_level_authentication():
+            if third_level_authentication():
+                print("Authentication Successful!")
+            else:
+                print("Third level authentication failed.")
+        else:
+            print("Second level authentication failed.")
+    else:
+        print("First level authentication failed.")
+
+if __name__ == "__main__":
+    main()
